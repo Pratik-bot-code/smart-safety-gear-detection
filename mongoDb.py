@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 # Connect to MongoDB
 # MONGO_URI = os.getenv("MONGO_URI")  # Get from Vercel's environment variables
-MONGO_URI = os.environ["MONGO_URI"]
+MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)  
 db = client['safety_gear']  # Database name
 detections = db['detections']  # Collection name
