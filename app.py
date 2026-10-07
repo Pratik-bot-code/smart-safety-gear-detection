@@ -20,7 +20,7 @@ model = YOLO(r'weights/best.pt')
 # Function to send an Email
 def send_email_alert(subject, missing_items_str, user_email, app_password):
     sender_email = user_email
-    receiver_email = "prashanths272005@gmail.com"  # Change this to the supervisor's email
+    receiver_email = "shibampriyadarshibarik07@gmail.com"  # Change this to the supervisor's email
 
     # Create the email content with the professional message
     message = f"""
